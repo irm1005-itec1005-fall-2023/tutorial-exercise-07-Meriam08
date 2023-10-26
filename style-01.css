@@ -9,7 +9,8 @@ TASK 1
 
   /* Use grid-template-columns to set four equal width columns */
   /* Experiment with both the repeat() notation and writing out the full column definition */
-
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   /* Set the gap to 2rem to add spacing around each grid item in the contaiern */
 }
 
@@ -134,7 +135,7 @@ gap: 2rem;
   grid-template-rows: repeat(3, 1fr);
 
    /* Set the gap to 2rem to add spacing around each grid item in the contaiern */
-   
+   gap: 2rem;
 
   /*
     Use grid-template-areas to name the different sections
@@ -156,7 +157,7 @@ gap: 2rem;
   "A A A A A A"
   ". . . C D ."
   "B B B B B B";
-  gap: 2rem;
+  
 
 }
 
