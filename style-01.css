@@ -23,22 +23,30 @@ TASK 1
   display: grid;
 
   /* Use grid-template-columns to set four equal width columns */
+  grid-template-columns: repeat(4, 1fr);
 
   /* Use grid-template-rows to set two rows each with an equal height */
+  grid-template-rows: repeat(2, 1fr);
 
   /* Set the gap to 2rem to add spacing around each grid item in the contaiern */
+gap: 2rem;
 }
 
 .grid-container-task-2 .item-1 {
   /* Add a grid-row-start to have this item start at the top most row line */
+  grid-row-start: 1;
 
   /*
     Add a grid-row-end to have the item start at the last row line
     HINT: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end
   */
+  grid-row-end: -1;
 }
 
 .grid-container-task-2 .item-2 {
+  grid-column-start: 3;
+  grid-column-end: -1;
+  grid-row-start: 2;
   /* Use grid-columnd-start to start at the 3rd column line */
 
   /*
@@ -59,19 +67,27 @@ TASK 1
   display: grid;
 
   /* Use grid-template-columns to set four equal width columns */
+  grid-template-columns: repeat(4, 1fr);
 
   /* Use grid-template-rows to set four rows each with an equal height */
+  grid-template-rows: repeat(4, 1fr);
 
   /* Set the gap to 2rem to add spacing around each grid item in the contaiern */
+  gap: 2rem;
 }
 
 .grid-container-task-3 .item-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
   /* grid-column-start at line 1 */
 
   /* grid-column-end at line 4 */
 }
 
 .grid-container-task-3 .item-2 {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: -1;
   /* grid-column-start at line 4 */
 
   /* grid-row-start at line 1 */
@@ -80,14 +96,25 @@ TASK 1
 }
 
 .grid-container-task-3 .item-3 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 4;
+
   /* that's enough hints for now */
 }
 
 .grid-container-task-3 .item-4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
   /* You totally got this */
 }
 
 .grid-container-task-3 .item-5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-end: -1;
   /* Easy as pie */
 }
 
@@ -107,11 +134,11 @@ TASK 1
   grid-template-rows: repeat(3, 1fr);
 
    /* Set the gap to 2rem to add spacing around each grid item in the contaiern */
-   gap: 2rem;
+   
 
   /*
     Use grid-template-areas to name the different sections
-
+   
     We know from our grid-template-columns decleration above
     that we have 6 columns and 3 rows in total
 
@@ -123,9 +150,13 @@ TASK 1
 
     Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas
 
-  */
 
   /* Fill in here */
+  grid-template-areas: 
+  "A A A A A A"
+  ". . . C D ."
+  "B B B B B B";
+  gap: 2rem;
 
 }
 
@@ -160,34 +191,50 @@ TASK 1
 
 .grid-container-task-5 .item-1 {
   /* Fill in here */
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 .grid-container-task-5 .item-2 {
   /* Fill in here */
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 
 .grid-container-task-5 .item-3 {
   /* Fill in here */
+  grid-column-start: 3;
+  grid-row-start: 3;
 }
 
 .grid-container-task-5 .item-4 {
   /* Fill in here */
+  grid-column-start: 4;
+  grid-row-start: 4;
 }
 
 .grid-container-task-5 .item-5 {
   /* Fill in here */
+  grid-column-start: 5;
+  grid-row-start: 5;
 }
 
 .grid-container-task-5 .item-6 {
   /* Fill in here */
+  grid-column-start: 6;
+  grid-row-start: 6;
 }
 
 .grid-container-task-5 .item-7 {
   /* Fill in here */
+  grid-column-start: 7;
+  grid-row-start: 7;
 }
 
 .grid-container-task-5 .item-8 {
   /* Fill in here */
+  grid-column-start: 8;
+  grid-row-start: 8;
 }
 
 /*
